@@ -49,9 +49,9 @@ func AesDecrypt(encrypted, key []byte, iv []byte) ([]byte, error) {
 }
 
 func main () {
-	var sessionKey = "LXFJEfsRiNLfk2q4z3ajyQ=="
-	var encryptedData = "AZMiC/4nuJCP/BAqGZ9WHGCzdg8Nva/3gl54y/242nDCCumn0H/DZPvhNURwG0mFbRVrTDwPS/NbG4a/NUuypuLZs5BnLgSA6MPzAJKJyc4V7a+bvT+b90UWJYvHYBsnxrxDeYzX7CyZ0fQJizQOoB0C8O2mvobAPvzddpju4yOxBiULwDBGV0ldTNPND8+PsXNbLnPTEHh9rdvx/umfp1ngT2RqZhttBmp/0xdhVM2c7BzAU66raezJajB5XEzfAwd5ppy1ZIS/Fg9oymPfMzjLMv72464WthXMszqW68YRvu/bdL6XcnSdRiHIlb2EPN+Hd3CiyM7cFe42lWXkXAxCh/D4Uv+IMcDf2nWftpKIasmKyozskjst7YLu4Vas4Lj+uduIkv472kI8O/HcGsCIJcWQvUgvgmuixRVVxMzKOYVf8PykxnapNw2MQCtx3l8HJ8AIZgo8am4Vi4DcOX/S7RKhUXSdXMUeu/QX1zA="
-	var iv = "QFZw1/47zE2aHmU1UNuHPw=="
+	var sessionKey = ""
+	var encryptedData = ""
+	var iv = ""
 	decoded, _ := base64.StdEncoding.DecodeString(sessionKey)
 	encrypteddata, _ := base64.StdEncoding.DecodeString(encryptedData)
 	ivdata, _ := base64.StdEncoding.DecodeString(iv)
